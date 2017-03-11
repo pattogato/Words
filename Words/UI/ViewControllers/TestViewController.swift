@@ -10,6 +10,9 @@ import UIKit
 
 final class TestViewController: UIViewController {
     
+    @IBAction func closeButtonTouched(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
     
 }

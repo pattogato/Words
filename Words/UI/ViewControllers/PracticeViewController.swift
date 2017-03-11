@@ -10,6 +10,8 @@ import UIKit
 
 final class PracticeViewController: UIViewController {
     
-    
+    @IBAction func closeButtonTouched(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
 }
