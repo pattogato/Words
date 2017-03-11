@@ -9,11 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Words" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Words" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -27,7 +26,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Practice"/>
                                 <connections>
-                                    <segue destination="3s0-vh-rRK" kind="presentation" id="XFt-jZ-ERF"/>
+                                    <segue destination="lrw-zg-AJ3" kind="presentation" id="79y-vy-JAh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w8U-uT-Nk1">
@@ -35,7 +34,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Test"/>
                                 <connections>
-                                    <segue destination="3s0-vh-rRK" kind="presentation" id="8aq-1C-uvS"/>
+                                    <segue destination="3s0-vh-rRK" kind="presentation" id="F2i-SY-yow"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRm-L4-Uxs">
@@ -51,6 +50,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="7Bp-UH-rWQ"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="383" y="-91"/>
         </scene>
@@ -62,13 +62,21 @@
             </objects>
             <point key="canvasLocation" x="1107" y="-303"/>
         </scene>
+        <!--Practice-->
+        <scene sceneID="9pL-6o-ILK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Practice" id="lrw-zg-AJ3" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zkv-5x-vAT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1130" y="-92"/>
+        </scene>
         <!--Test-->
         <scene sceneID="k47-xj-esz">
             <objects>
                 <viewControllerPlaceholder storyboardName="Test" id="3s0-vh-rRK" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AbD-Kh-AuE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1122" y="-95"/>
+            <point key="canvasLocation" x="1120" y="157"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Mhd-3G-VcK">
@@ -89,7 +97,4 @@
             <point key="canvasLocation" x="-570.39999999999998" y="-91.304347826086968"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="XFt-jZ-ERF"/>
-    </inferredMetricsTieBreakers>
 </document>
